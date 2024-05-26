@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 width: 5,
               ),
-               Text(
+              Text(
                 "1".tr,
                 style: TextStyle(
                     color: AppColors.primaryColor,
@@ -38,12 +38,23 @@ class HomeScreen extends StatelessWidget {
           ),
           actions: [
             IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.notifications_none_outlined,
-                  color: AppColors.primaryColor,
-                  size: 25,
-                ))
+              onPressed: () {},
+              icon: Icon(
+                Icons.notifications_none_outlined,
+                color: AppColors.primaryColor,
+                size: 25,
+              ),
+            ),
+            IconButton(
+              onPressed: () {
+                controller.shareLink();
+              },
+              icon: Icon(
+                Icons.share_outlined,
+                color: AppColors.primaryColor,
+                size: 25,
+              ),
+            )
           ],
         ),
         bottomNavigationBar: CompleteCustomNavBar(),

@@ -12,4 +12,5 @@ class MyServices extends GetxService {
 
 initialServices() async {
   await Get.putAsync(() => MyServices().init());
+  await Future.delayed(const Duration(seconds: 1));
 }

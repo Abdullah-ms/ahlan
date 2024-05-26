@@ -15,34 +15,40 @@ class FAQs extends StatelessWidget {
   Widget build(BuildContext context) {
     FaqsControllerImp controller = Get.put(FaqsControllerImp());
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10 , horizontal: 7 ),
-      child: ListView(children: [
-        CustomHomeTitle(title: "5".tr),
-        GetBuilder<FaqsControllerImp>(
-          builder: (controller) => HandlingDataView(
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 7),
+      child: ListView(
+        children: [
+          CustomHomeTitle(title: "5".tr),
+          GetBuilder<FaqsControllerImp>(
+            builder: (controller) => HandlingDataView(
               statusRequest: controller.statusRequest,
               widget: ListView.separated(
                 itemCount: controller.faqsList.length,
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 physics: const NeverScrollableScrollPhysics(),
-                itemBuilder: (context , index){
+                itemBuilder: (context, index) {
                   return Column(
                     children: [
                       CustomFAQsList(
-                        faqsModel :
-                        FaqsModel.fromJson(controller.faqsList[index]),
+                        faqsModel:
+                            FaqsModel.fromJson(controller.faqsList[index]),
                       ),
-                      SizedBox(height: 5,),
+                      SizedBox(
+                        height: 5,
+                      ),
                     ],
                   );
                 },
-                separatorBuilder: (BuildContext context, int index) => const SizedBox(
+                separatorBuilder: (BuildContext context, int index) =>
+                    const SizedBox(
                   width: 10,
                 ),
-              )
+              ),
+            ),
           ),
-        ),
-    ],),);
+        ],
+      ),
+    );
   }
 }
