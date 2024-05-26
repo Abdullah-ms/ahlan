@@ -2,7 +2,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controller/itemsController.dart';
-import '../../../core/constants/assetsImages.dart';
 import '../../../core/constants/colors.dart';
 import '../../../core/functions/translateDatabase.dart';
 import '../../../data/model/itemsModel.dart';

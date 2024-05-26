@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../controller/itemsController.dart';
 import '../../core/classes/handlingDataView.dart';
-import '../../core/constants/colors.dart';
-import '../../core/functions/translateDatabase.dart';
 import '../../data/model/itemsModel.dart';
 import '../widgets/customAppBar.dart';
 import '../widgets/items/ListOfItemsPageCategories.dart';

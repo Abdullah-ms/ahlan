@@ -1,10 +1,8 @@
 import 'package:ahlan/data/model/faqsModel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../controller/faqs_controller.dart';
 import '../../core/classes/handlingDataView.dart';
-import '../../core/constants/colors.dart';
 import '../widgets/faqs/customFAQsCard.dart';
 import '../widgets/home/customHomeTitle.dart';
 
@@ -13,7 +11,7 @@ class FAQs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FaqsControllerImp controller = Get.put(FaqsControllerImp());
+    Get.put(FaqsControllerImp());
     return Container(
       padding: EdgeInsets.symmetric(vertical: 10, horizontal: 7),
       child: ListView(

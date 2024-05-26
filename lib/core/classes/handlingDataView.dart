@@ -1,6 +1,5 @@
 import 'package:ahlan/core/classes/statusRequest.dart';
 import 'package:flutter/material.dart';
-import '../constants/assetsImages.dart';
 import '../constants/colors.dart';
 
 class HandlingDataView extends StatelessWidget {

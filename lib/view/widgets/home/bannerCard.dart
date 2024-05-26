@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controller/home_Controller.dart';
-import '../../../core/constants/colors.dart';
 
 class BannerCard extends GetView<HomeControllerImp> {
 
